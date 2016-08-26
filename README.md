@@ -1,2 +1,2 @@
-# CareerFoundry - 2.1 - Semantic HTML & Footers
-CareerFoundry - 2.1 - Semantic HTML & Footers
+# CareerFoundry - 1.11 - Final (remake)
+CareerFoundry 1.11 - Final Submission remake
