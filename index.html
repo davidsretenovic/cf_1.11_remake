@@ -73,8 +73,16 @@
     </div> <!-- end id about -->
 
     <div class="container-fluid anchor" id="portfolio">
-      <div class="row row-grid" id="portfolio-grid">
-      </div>
+      <div class="row row-grid" id="work">
+        <div class="col-sm-6 col-lg-3" id="proj-1">GitHub Repos</div>
+        <div class="col-sm-6 col-lg-3" id="proj-2">Bootstrap Calculator</div>
+        <div class="col-sm-6 col-lg-3" id="proj-3">PowerShell GUI</div>
+        <div class="col-sm-6 col-lg-3" id="proj-4">.col-sm-3</div>
+        <div class="col-sm-6 col-lg-3" id="proj-5">.col-sm-3</div>
+        <div class="col-sm-6 col-lg-3" id="proj-6">.col-sm-3</div>
+        <div class="col-sm-6 col-lg-3" id="proj-7">.col-sm-3</div>
+        <div class="col-sm-6 col-lg-3" id="proj-8">.col-sm-3</div>
+      </div> <!-- end class row id work -->
     </div> <!-- end id portfolio -->
 
     <div class="container-fluid anchor" id="faq">
@@ -161,7 +169,18 @@
         <!-- end panel-group -->
 
     </div> <!-- end id faq -->
+
     <div class="container-fluid anchor" id="contact">
+      <div class="row row-grid" id="contact-wrapper">
+        <div class="col-sm-12" id="name">David Sretenovic</div>
+        <div class="col-sm-12" id="subtitle">Systems Engineer, Front-end Web Developer, Scotch afficionado</div>
+      </div>
+      <div class="row row-grid" id="contact-details">  
+        <div class="col-sm-12" id="location"><span class="glyphicon glyphicon-home"></span> Melbourne, Australia</div>
+        <div class="col-sm-12" id="email"><span class="glyphicon glyphicon-envelope"></span><a href="mailto:asdfasdfasdf" alt="this is an randomizer email address, for privacy">someone@somewhere.com</a></div>
+        <div class="col-sm-12" id="phone"><span class="glyphicon glyphicon-earphone"></span> +61 3 1234 5678</div>
+        <div class="col-sm-12" id="web"><span class="glyphicon glyphicon-globe"></span> GitHub</div>
+      </div> <!-- end class row id contact-wrapper -->
     </div> <!-- end id contact -->
 
     <footer>
@@ -207,6 +226,8 @@
           return false;
         });
     </script>
+    <!-- accordion fix -->
+    <script>$('#accordion').collapse().height('auto');</script>
   </body>
   
 </html>

@@ -17,30 +17,6 @@ body {
   padding-top: 10vh;
 }
 
-/* bootstrap column media rules */
-/* Extra Small */
-@media (max-width:767px) {
-  margin-top: 0;
-  .name {
-    font-size: 10em;
-  }
-}
-
-/* Small */
-@media (min-width:768px) and (max-width:991px) {
-  margin-top: 0;
-}
-
-/* Medium */
-@media (min-width:992px) and (max-width:1199px) {
-  margin-top: 0;
-}
-
-/* Large */
-@media (min-width:1200px) {
-  margin-top: 0;
-}
-
 /* vertical viewport sizing */ 
 #home, #about, #portfolio, #faq {
   height: 90vh;
@@ -49,6 +25,43 @@ body {
 #contact {
   height: 100vh;
   padding-bottom: 2%;
+}
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+  #work > [class*="col-"] {
+    height: 12%;
+  }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+  #work > [class*="col-"] {
+    height: 12%;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  #work > [class*="col-"] {
+    height: 20%;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  #work > [class*="col-"] {
+    height: 25%;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+  #work > [class*="col-"] {
+    height: 50%;
+  }
 }
 
 /* navbar */
@@ -128,6 +141,67 @@ body {
   border-bottom: white solid 3px;
 }
 
+/* TODO: find out why the border doesn't fit the content on all media sizes */
+#work {
+  width: 90%;
+  height: 80%;
+  margin: 0 auto;
+  /* border: white solid 3px; */
+}
+
+/* TODO: i believe this interferes with 100vh, possibly should be media query */
+/* #work > [class*="col-"] {
+  height: 20%;
+} */
+
+#work > #proj-1 {
+  color: mediumseagreen;
+  text-anchor: end;
+  background-image: url("../img/proj/github.png");
+  background-attachment: local;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat; 
+}
+
+#work > #proj-2 {
+  color: lightcoral;
+  background-image: url("../img/proj/calculator.jpg");
+  background-attachment: local;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
+
+#work > #proj-3 {
+  color: lightyellow;
+  background-image: url("../img/proj/powershell.png");
+  background-attachment: local;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
+
+#work > #proj-4 {
+  background-color: lavenderblush;
+}
+
+#work > #proj-5 {
+  background-color: plum;
+}
+
+#work > #proj-6 {
+  background-color: lemonchiffon;
+}
+
+#work > #proj-7 {
+  background-color: lightblue;
+}
+
+#work > #proj-8 {
+  background-color: red;
+}
+
 /* faq */
 #faq {
   background-color: lightpink;
@@ -144,9 +218,11 @@ body {
   border: white solid 3px;
 } */
 
+/* TODO: find out why in 320px view this overlaps with the contact page */
+
 #accordion {
-  padding-top: 3em;
-  height: 100%;
+  padding-top: 1em; /*was 3em */
+  height: 95%;
   width: 80%;
   margin: 0 auto !important;
 }
@@ -156,7 +232,7 @@ body {
 #headingThree,
 #headingFour,
 #headingFive {
-    background-color: gray;
+  background-color: gray;
 }
 
 .panel,
@@ -182,6 +258,14 @@ body {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+}
+
+#contact-wrapper {
+  border: white solid 3px;
+}
+
+#contact-details {
+  float: right;
 }
 
 /* footer */
@@ -246,6 +330,10 @@ footer {
 }
 
 /* Typography */
+
+* {
+  font-family: 'Lato', 'Helvetica', 'Arial, sans-serif'
+}
 
 /* typography: navigation */
 .navbar-brand {
