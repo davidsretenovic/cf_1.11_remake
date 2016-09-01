@@ -6,7 +6,14 @@
 body {
   background-color: lightgray;
   position: relative;
-  padding-top: 3.125em;
+  /* padding-top: 3.125em; original */
+  padding-top: 2em;
+}
+
+.wrapper {
+  border: white solid 3px;
+  padding: 5%;
+  margin-bottom: 5%;
 }
 
 [class*="col-"] {
@@ -22,9 +29,15 @@ body {
   height: 90vh;
 } */
 
-#contact {
+#home-wrapper {
+  height: 90vh;
+  margin-left: -0.9375em;
+  margin-right: -0.9375em;
+}
+
+#contact-wrapper {
   height: 100vh;
-  padding-bottom: 2%;
+  /* padding-bottom: 2%; */
 }
 
 /*==========  Mobile First Method  ==========*/
@@ -106,10 +119,21 @@ body {
   border-bottom: white solid 3px;
 }
 
-#myCarousel {
+#mycarousel {
   padding-top: 1.25em;
   margin-left: -0.9375em;
   margin-right: -0.9375em;
+}
+
+.item {
+    height: 37.5em;
+}
+
+.carousel-caption {
+    float: left;
+    position: absolute;
+    padding-bottom: 28.125em;
+    z-index: 0;
 }
 
 /* about */
@@ -237,7 +261,7 @@ body {
 #faq {
   background-color: lightpink;
   border-bottom: white solid 3px;
-  padding-bottom: 3em;
+  /* padding-bottom: 3em; done at wrapper level */
 }
 
 /* unused, as the video embed wrecks the vh height of the faq page, and the accordion */ 
@@ -291,12 +315,15 @@ body {
   -o-background-size: cover;
 }
 
-#contact-wrapper {
-  border: white solid 3px;
+#contact-title {
+  border: rebeccapurple solid 3px;
+  width: 50%;
 }
 
 #contact-details {
-  float: right;
+  border: cornflowerblue solid 3px;
+  width: 50%;
+  padding-top: 1%;
 }
 
 /* footer */
